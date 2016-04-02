@@ -26,7 +26,7 @@ add_filter( 'jwt_auth_token_before_dispatch', function( $data, WP_User $user ){
 add_action( 'plugins_loaded', 'cf_support_include_forms' );
 function cf_support_include_forms(){
 	include dirname( __FILE__ ) . '/forms/remote-login-include.php';
-	include dirname( __FILE__ )  . 'forms/remote-support-include.php';
+	include dirname( __FILE__ )  . '/forms/remote-support-include.php';
 }
 
 /**
